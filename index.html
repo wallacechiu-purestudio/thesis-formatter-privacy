@@ -1,48 +1,163 @@
-「論格 ThesisFormatter」隱私權政策（Privacy Policy）
-最後更新日期：2026 年 7 月 27 日
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隱私權政策 - 論格 ThesisFormatter</title>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --text-color: #1d1d1f;
+            --secondary-text: #86868b;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --border-color: #e5e5ea;
+        }
 
-感謝您使用「論格 ThesisFormatter」（以下簡稱「本應用程式」）。我們極度重視您的個人隱私與學術研究數據安全。本隱私權政策旨在說明本應用程式如何處理（以及更重要的是，不處理）您的個人資料與論文檔案。
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-1. 核心隱私承諾：100% 本機優先（Local-First）
-本應用程式採用「本機優先」的軟體架構設計：
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 48px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
 
-絕不上傳論文正文： 您的論文草稿、研究數據、文獻內容以及任何導出文件，完全儲存並處理於您的個人 Mac 電腦本機端。
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
 
-零雲端伺服器備份： 本應用程式未營運任何用於接收、處理或儲存使用者論文內文的外部雲端伺服器。
+        .update-date {
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
 
-2. 資料蒐集與使用說明
-本應用程式遵循「資料最小化」與「零收集」原則：
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: var(--text-color);
+        }
 
-個人身份資料： 我們不蒐集您的姓名、電子郵件地址、電話號碼、IP 位址或任何個人可識別資訊（PII）。
+        p, li {
+            font-size: 1rem;
+            color: #333336;
+        }
 
-論文與文件數據： 我們不讀取、不傳送、亦不儲存您論文內容以外的任何個人隱私資訊。論文內容僅在您的 Mac 本機記憶體與暫存區中進行格式排版與結構解析。
+        ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
 
-追蹤與分析（Analytics & Tracking）： 本應用程式不包含任何第三方追蹤 SDK、廣告識別碼或使用者行為分析工具（如 Google Analytics、Firebase 等）。
+        li {
+            margin-bottom: 8px;
+        }
 
-3. 本機檔案存取權限（macOS 沙盒機制）
-本應用程式嚴格遵守 macOS App Sandbox（沙盒）安全規範：
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
 
-檔案存取權限： 本應用程式僅在您透過檔案選擇器（File Picker）或拖放功能授權時，方能存取您指定選取的論文草稿（.docx, .pdf, .txt）與格式規範檔案。
+        .contact-info {
+            background: #fbfbfd;
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 16px;
+        }
 
-暫存檔處理： 所有排版過程中產生的臨時解析檔案均存放在 macOS 沙盒指定的本機暫存目錄中，並在轉換完成或應用程式關閉後由系統安全機制管控，絕不傳輸至本機以外的地方。
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-4. 選用性網路服務（Optional Network Features）
-本應用程式的核心排版功能可完全離線運作。唯有在您主動開啟特定功能時，會進行極最小化的發起請求：
+        a:hover {
+            text-decoration: underline;
+        }
 
-DOI / ISBN 輔助檢索功能： 若您在設定中主動勾選「補齊 DOI / ISBN 建議」，應用程式會將您參考文獻中的公開書目字串（如書名、作者或既有 DOI 碼），透過加密 HTTPS 連線傳送至公開學術資料庫（如 Crossref API 或 Open Library API）進行資料比對。
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
 
-網路請求範圍： 此請求僅包含公開之書目後設資料（Metadata），絕不包含您的論文正文、摘要或個人資訊。若您關閉此功能，本應用程式將完全不發起任何網路連線。
+<div class="container">
+    <h1>「論格 ThesisFormatter」隱私權政策</h1>
+    <div class="update-date">最後更新日期：2026 年 7 月 27 日</div>
 
-5. 第三方資料共享
-由於我們不蒐集您的任何資料，因此我們絕不可能將您的任何個人資訊或論文數據出售、租賃、交換或共享給任何第三方。
+    <p>感謝您使用「論格 ThesisFormatter」（以下簡稱「本應用程式」）。我們極度重視您的個人隱私與學術研究數據安全。本隱私權政策旨在說明本應用程式如何處理您的個人資料與論文檔案。</p>
 
-6. 兒童隱私（Children's Privacy）
-本應用程式為面向學術研究者之專業工具，不針對 13 歲以下兒童設計，亦不會故意蒐集兒童的任何個人資料。
+    <div class="highlight-box">
+        <strong>核心隱私承諾：100% 本機優先（Local-First）</strong><br>
+        本應用程式採本機架構設計，您的論文正文、數據與導出檔案完全儲存於您的 Mac 電腦本機端，絕不上傳至任何雲端伺服器。
+    </div>
 
-7. 隱私權政策之修改
-我們可能會不定期更新本隱私權政策。任何變更均會發布於此網頁，並更新頁首之「最後更新日期」。
+    <h2>1. 資料蒐集與使用說明</h2>
+    <p>本應用程式遵循「資料最小化」與「零收集」原則：</p>
+    <ul>
+        <li><strong>個人身份資料：</strong>我們不蒐集您的姓名、電子郵件地址、電話號碼、IP 位址或任何個人可識別資訊（PII）。</li>
+        <li><strong>論文與文件數據：</strong>我們不讀取、不傳送、亦不儲存您論文內容以外的任何個人隱私資訊。論文內容僅在您的 Mac 本機記憶體與暫存區中進行格式排版與結構解析。</li>
+        <li><strong>追蹤與分析：</strong>本應用程式不包含任何第三方追蹤 SDK、廣告識別碼或使用者行為分析工具。</li>
+    </ul>
 
-8. 聯絡我們
-若您對本隱私權政策或「論格 ThesisFormatter」的資料處理方式有任何疑問，請透過以下方式與我們聯繫：
+    <h2>2. 本機檔案存取權限（macOS 沙盒機制）</h2>
+    <p>本應用程式嚴格遵守 macOS App Sandbox（沙盒）安全規範：</p>
+    <ul>
+        <li><strong>檔案存取權限：</strong>僅在您透過檔案選擇器（File Picker）或拖放功能授權時，方能存取您指定選取的論文草稿（.docx, .pdf, .txt）與格式規範檔案。</li>
+        <li><strong>暫存檔處理：</strong>所有排版過程中產生的臨時解析檔案均存放在 macOS 沙盒指定的本機暫存目錄中，並在轉換完成或應用程式關閉後由系統安全機制管控。</li>
+    </ul>
 
-開發者／團隊電子郵件： [wallacememe@gmail.com]
+    <h2>3. 選用性網路服務（Optional Network Features）</h2>
+    <p>本應用程式的核心排版功能可完全離線運作。唯有在您主動開啟特定功能時，會進行極最小化的發起請求：</p>
+    <ul>
+        <li><strong>DOI / ISBN 輔助檢索功能：</strong>若您在設定中主動勾選「補齊 DOI / ISBN 建議」，應用程式會將您參考文獻中的公開書目字串，透過加密 HTTPS 連線傳送至公開學術資料庫（如 Crossref API 或 Open Library API）進行資料比對。</li>
+        <li><strong>網路請求範圍：</strong>此請求僅包含公開之書目後設資料（Metadata），絕不包含您的論文正文、摘要或個人資訊。若關閉此功能，本應用程式將完全不發起任何網路連線。</li>
+    </ul>
+
+    <h2>4. 第三方資料共享</h2>
+    <p>由於我們不蒐集您的任何資料，因此我們絕不可能將您的任何個人資訊或論文數據出售、租賃、交換或共享給任何第三方。</p>
+
+    <h2>5. 兒童隱私（Children's Privacy）</h2>
+    <p>本應用程式為面向學術研究者之專業工具，不針對 13 歲以下兒童設計，亦不會故意蒐集兒童的任何個人資料。</p>
+
+    <h2>6. 隱私權政策之修改</h2>
+    <p>我們可能會不定期更新本隱私權政策。任何變更均會發布於此網頁，並更新頁首之「最後更新日期」。</p>
+
+    <h2>7. 聯絡我們</h2>
+    <p>若您對本隱私權政策或「論格 ThesisFormatter」的資料處理方式有任何疑問，請透過以下方式與我們聯繫：</p>
+    <div class="contact-info">
+        <ul>
+            <li><strong>開發者／團隊電子郵件：</strong> wallacememe@gmail.com</li>
+            <li><strong></strong> <a href="https://github.com/wallacechiu-purestudio/thesis-formatter-privacy" target="_blank">thesis-formatter-privacy</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
